@@ -3,16 +3,51 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width initial-scale=1">
-		<title>David Chu's China Bistro</title>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/styles.css">
+		<title>The Ring Restaurant</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 		<link rel="stylesheet" href="css/styles.css">
+		<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+		
+		<script src="https://kit.fontawesome.com/a003c65f08.js" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	</head>
 <body>
-	<header>
-	</header>
+	<nav id="header-nav" class="navbar">
+	<div class="container">
+		<a href="index.html" class="float-left d-none d-md-block">
+			<div id="logo-img" alt="Logo image"></div>
+		</a>
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
+		<div class="navbar-brand float-left">
+			<a href="index.html"><h1>The Ring Restaurant</h1></a>
+				<p><img src="images/certified-logo.png" alt="Green Restaurant Certification">
+					<span>Certified Green Restaurant</span>
+				</p>
+		</div>
+	</div>
+
+		<ul id="nav-list" class="nav float-right">
+			<li class="nav-item">
+				<a class="nav-link" href="menu-categories.html">
+					<span class="fas fa-pizza-slice"></span><br class="hidden-xs">Menu</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">
+					<span class="fas fa-info-circle"></span><br class="hidden-xs">About</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#">
+					<span class="fas fa-star"></span><br class="hidden-xs">Awards</a>
+			</li>
+			<li id="phone" class="nav-item">
+				<a class="nav-link" href="tel:97450170109">
+					<span>97450170109</span></a><div>* We Deliver</div>
+			</li>
+		</ul>		
+	</nav>					
 </body>
 </html>			
