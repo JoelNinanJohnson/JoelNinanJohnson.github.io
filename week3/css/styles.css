@@ -1,7 +1,7 @@
 body {
 	font-size: 16px;
 	color: #fff;
-	background-color: #61122f;
+	background-color: #000;
 	font-family: 'Oxygen',sans-serif;
 	
 }
@@ -12,7 +12,7 @@ body {
 
 
 #header-nav {
-	background-color: #f6b319;
+	background-color: #FF914D;
 	border-radius: 0;
 	border: 0;
 }
@@ -62,7 +62,7 @@ body {
 }
 
 #nav-list a{
-	color: #951C49;
+	color: #000;
 	text-align: center;
 }
 
@@ -90,20 +90,100 @@ body {
 	padding-right: 15px;
 }
 
-@media (min-width: 768px) and (max-width: 1199px){
+
+.btn-primary {
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle, .btn-primary:hover {
+    color:  #000;
+    background-color: #E7E7E7;
+    border-color:  #000;
+}
+
+.dropdown-menu {
+	background-color: #FF914D;
+	border-color: #000;
+	font-size: 1.2em;
+}
+
+.dropdown-menu span {
+	margin-right: 5px;
+}
+
+.dropdown-item{
+	color: #000;
+}
+
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: #E7E7E7;
+}
+
+#tel-number{
+	padding: 0;
+	margin-top: 10px;
+}
+
+#tel-number span{
+	margin-right: 10px;
+}
+
+#tel-btn{
+	width: 300px;
+	color: #FF914D;
+	font-size: 1.2em;
+	border-color: #FF914D;
+}
+
+
+
+/**************X-Large Devices Only********/
+@media (min-width: 1200px) {
+	
+	}
+
+/************large Devices Only*********/
+@media (min-width: 992px) and (max-width: 1199px) {
 	#logo-img {
-	background: url('../images/logo-medium.png') no-repeat;
-	width: 100px;
-	height: 100px;
-	margin: 5px 5px 5px 0;
+		background: url('../images/logo-medium.png') no-repeat;
+		width: 100px;
+		height: 100px;
+		margin: 5px 5px 5px 0;
 	}
+}
 
+/************Medium Devices Only*************/
+@media (min-width: 768px) and (max-width: 991px) {
+	#logo-img {
+		background: url('../images/logo-medium.png') no-repeat;
+		width: 100px;
+		height: 100px;
+		margin: 5px 5px 5px 0;
+	}
+}
+
+/***********Small Devices Only********/
+@media (max-width: 767px) {
 	.navbar-brand{
-		font-size: 2vw;
+		padding-top: 10px;
+		height: 80px;
 	}
 
-	#nav-list a span{
-	font-size: 2vw;
-	margin: 0;
+	.navbar-brand h1 {
+		padding-top: 10px;
+		font-size: 5vw;
+	}
+
+	.navbar-brand p {
+		font-size: 2vw;
+		margin-top: 12px;
+	}
+
+	.navbar-brand p img {
+		height: 20px;
 	}
 }

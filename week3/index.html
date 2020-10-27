@@ -31,23 +31,40 @@
 	</div>
 
 		<ul id="nav-list" class="nav float-right">
-			<li class="nav-item">
+			<li class="nav-item d-none d-md-block">
 				<a class="nav-link" href="menu-categories.html">
-					<span class="fas fa-pizza-slice"></span><br class="hidden-xs">Menu</a>
+					<span class="fas fa-pizza-slice"></span><br>Menu</a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item d-none d-md-block ">
 				<a class="nav-link" href="#">
-					<span class="fas fa-info-circle"></span><br class="hidden-xs">About</a>
+					<span class="fas fa-info-circle"></span><br>About</a>
 			</li>
-			<li>
+			<li class="nav-item d-none d-md-block">
 				<a class="nav-link" href="#">
-					<span class="fas fa-star"></span><br class="hidden-xs">Awards</a>
+					<span class="fas fa-star"></span><br>Awards</a>
 			</li>
-			<li id="phone" class="nav-item">
+			<li id="phone" class="nav-item d-none d-md-block ">
 				<a class="nav-link" href="tel:97450170109">
 					<span>97450170109</span></a><div>* We Deliver</div>
 			</li>
-		</ul>		
-	</nav>					
+		</ul>
+
+
+		<div class="dropdown dropleft d-md-none float-right">
+    		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    		</button>
+    
+    		<div class="dropdown-menu">
+      			<a class="dropdown-item" href="menu-categories.html"><span class="fas fa-pizza-slice"></span>Menu</a>
+      			<a class="dropdown-item" href="#"><span class="fas fa-info-circle"></span>About</a>
+      			<a class="dropdown-item" href="#"><span class="fas fa-star"></span>Awards</a>
+   			</div>
+
+  		</div>	
+	</nav>
+
+	<div id="tel-number" class="d-flex justify-content-center d-md-none">
+			<a id="tel-btn" href="tel:97450170109" class="btn btn-outline-dark btn-block" role="button"><span class="fas fa-phone"></span>97450170109</a>
+	</div>				
 </body>
 </html>			
