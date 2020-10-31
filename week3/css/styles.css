@@ -141,12 +141,55 @@ body {
 	border-color: #FF914D;
 }
 
-
-/************JUMBOTRON********************/
+/***************HOME PAGE****************/
 .jumbotron {
 	padding: 0;
 	margin-top: 30px;
 }
+
+#home-tiles {
+	padding: 0 20px 0 20px;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	margin-left: 10px;
+	position: relative;
+	border: 2px solid #3F0C1F;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+	background: url('../images/menu-image.jpg') no-repeat;
+	background-position: center;
+}
+
+#specials-tile {
+	background: url('../images/specials-image.jpg') no-repeat;
+	background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+
+/************END OF HOME PAGE*************/
 
 
 
@@ -168,7 +211,7 @@ body {
 }
 
 /************Medium Devices Only*************/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
 	#logo-img {
 		background: url('../images/logo-medium.png') no-repeat;
 		width: 100px;
@@ -180,7 +223,7 @@ body {
 }
 
 /***********Small Devices Only********/
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	.navbar-brand{
 		padding-top: 10px;
 		height: 80px;
@@ -203,5 +246,20 @@ body {
 	.jumbotron {
 		margin-top: 15px;
 	}
+	/*End of Header*/
+	
+	/*Home*/
+	#menu-tile, #specials-tile {
+		width: 368px;
+   		margin: 0 auto 10px;
+	} 
+}
+
+@media (max-width: 410px) {
+	/*Home*/
+	#menu-tile, #specials-tile {
+		width: 280px;
+   		margin: 0 auto 10px;
+	} 
 }
 /**************END OF MEDDIA QUERIES*********/
