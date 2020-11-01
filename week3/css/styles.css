@@ -78,6 +78,10 @@ body {
 	font-size: 1.8em;
 }
 
+.active {
+	background-color: #E7E7E7;
+}
+
 #phone{
 	margin-top: 5px;
 }
@@ -257,7 +261,7 @@ body {
 .category-tile:hover {
 	box-shadow: 0 1px 5px 1px #cccccc;
 }
-#menu-categories + div {
+#menu-categories-title {
 	margin-bottom: 50px;
 }
 /**************END OF MENU-CATEGORIES PAGE**********/
