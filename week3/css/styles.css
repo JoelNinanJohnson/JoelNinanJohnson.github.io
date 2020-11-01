@@ -1,3 +1,4 @@
+
 body {
 	font-size: 16px;
 	color: #fff;
@@ -6,9 +7,12 @@ body {
 }
 
 .container{
-	width: auto;
-	margin-left: 0;
+	margin: 15px;
+	max-width: 100%;
+	padding-left: 0;
+	padding-right: 0;
 }
+/*****************HOME PAGE******************/
 
 /**************NAV BAR*****************/
 #header-nav {
@@ -141,7 +145,7 @@ body {
 	border-color: #FF914D;
 }
 
-/***************HOME PAGE****************/
+/***************MAIN CONTENT****************/
 .jumbotron {
 	padding: 0;
 	margin-top: 30px;
@@ -189,9 +193,74 @@ body {
 	opacity: .8;
 }
 
-/************END OF HOME PAGE*************/
+/************END OF MAIN CONTENT*************/
 
+/**********FOOTER**********/
+.panel-footer {
+	margin-top: 30px;
+	padding-top: 35px;
+	background-color: #222;
+	border-top: 0;
+}
+.panel-footer div.row {
+	margin-bottom: 30px;
+}
+#hours, #address {
+	line-height: 2;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+#hours > span, #address > span {
+	font-size: 1.3em;
+}
+#address p {
+	color: #557c3e;
+	font-size: .8em;
+	line-height: 1.8em;
+}
+#testimonials {
+	font-style: italic;	
+	padding-left: 30px;
+	padding-right: 30px;
+}
+#testimonials p:nth-child(2) {
+	margin-top: 25px;
+}
+.footer-copyright {
+	background-color: #757F95;
+}
+/******END OF FOOTER*******/
 
+/******************END OF HOMEPAGE******************/
+
+/******************MENU-CATEGORIES PAGE*************/
+.category-tile {
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 15px;
+}
+.category-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .7;
+}
+.category-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-categories + div {
+	margin-bottom: 50px;
+}
+/**************END OF MENU-CATEGORIES PAGE**********/
 
 /**************MEDIA QUERIES**************/
 /**************X-Large Devices Only********/
@@ -253,8 +322,23 @@ body {
 		width: 368px;
    		margin: 0 auto 10px;
 	} 
+
+	/*Footer*/
+	.panel-footer section {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.panel-footer section:nth-child(3) {
+		margin-bottom: 0;
+	}
+	.panel-footer section hr {
+		width: 50%;
+		background-color: #fff;
+	}
+
 }
 
+/************Xtra Small Devices*************/
 @media (max-width: 410px) {
 	/*Home*/
 	#menu-tile, #specials-tile {
